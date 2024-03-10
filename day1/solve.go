@@ -29,6 +29,9 @@ func Part2(input []string) int {
 	return osum
 }
 func getNumber(digit string) int {
+	if len(digit) == 0 {
+		return 0
+	}
 	digits := map[string]int{
 		"one":   1,
 		"two":   2,
